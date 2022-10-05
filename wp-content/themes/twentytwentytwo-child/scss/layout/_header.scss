@@ -1,5 +1,4 @@
 .header {
-  background-color: var(--black);
 
   .topheader {
     .top {
@@ -51,16 +50,39 @@
     }
   }
 }
-.header_mainmenu {
-  background-color: var(--black);
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  ul{
+
+.fuild-menu {
+width: 100%;
+background-color: blue;
+
+  .header_mainmenu {
     display: flex;
-    li{
-          margin: 0 10px;
-            background: var(--white);
+    width: 80%;
+    margin: 0 auto;
+    .home-icon{
+        line-height: 40px;
+        i{
+ 
+  color: var(--white);
+          font-weight: 700;
+        }
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        margin: 0 10px;
+        
+        line-height: 40px;
+        a{
+          span{
+            font-weight: 700;
+            color: var(--white);
+            
+          }
+        }
+      }
     }
   }
 }

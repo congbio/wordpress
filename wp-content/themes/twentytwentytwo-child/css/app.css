@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+:root {
+  --white:white;
+  --black:black ;
+}
+
 a {
   text-decoration: none;
 }
@@ -252,9 +257,6 @@ input[type=button] {
   zoom: 1;
 }
 
-.header {
-  background-color: var(--black);
-}
 .header .topheader .top {
   background-color: var(--white);
 }
@@ -295,18 +297,32 @@ input[type=button] {
   font-size: 30px;
 }
 
-.header_mainmenu {
-  background-color: var(--black);
+.fuild-menu {
+  width: 100%;
+  background-color: blue;
+}
+.fuild-menu .header_mainmenu {
   display: flex;
   width: 80%;
   margin: 0 auto;
 }
-.header_mainmenu ul {
+.fuild-menu .header_mainmenu .home-icon {
+  line-height: 40px;
+}
+.fuild-menu .header_mainmenu .home-icon i {
+  color: var(--white);
+  font-weight: 700;
+}
+.fuild-menu .header_mainmenu ul {
   display: flex;
 }
-.header_mainmenu ul li {
+.fuild-menu .header_mainmenu ul li {
   margin: 0 10px;
-  background: var(--white);
+  line-height: 40px;
+}
+.fuild-menu .header_mainmenu ul li a span {
+  font-weight: 700;
+  color: var(--white);
 }
 
 :root {
