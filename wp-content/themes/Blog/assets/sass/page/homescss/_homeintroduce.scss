@@ -1,0 +1,17 @@
+.home-about-me {
+  width: 80%;
+  margin: 50px auto 20px;
+  height: 100%;
+  img {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 999px;
+    display: block;
+  }
+  .about-title {
+    font-size: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,55 @@
+ 
+.category-container {
+  width: 100%;
+  margin: 40px auto;
+  .home-category {
+    display: grid;
+    grid-template-columns: $grid_category_block;
+    gap: 10px;
+    align-items: stretch;
+
+    .category-elementt {
+      box-shadow: $box_shadow_auto;
+     padding: 25px 10px;
+      img{
+        padding:10px;
+        }
+      .button {
+        border-radius: 4px;
+        background-color: $main_font_color;
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        width: 90%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px auto;
+        display: block;
+        span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        span:after {
+          content: "\00bb";
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+      }
+      .button:hover span {
+        padding-right: 25px;
+      }
+
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+    }
+  }
+}
