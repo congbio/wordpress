@@ -10,65 +10,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="<?php bloginfo('charset'); ?>" />
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" /> -->
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="profile" href="http://gmgp.org/xfn/11" /> -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
     <div class="container">
         <header class="header">
-            <div class="topheader">
-                <nav>
-                    <ul class="top">
-                        <li>VTV 1</li>
-                        <li>VTV 1</li>
-                        <li>VTV 1</li>
-                        <li>VTV 1</li>
-                        <li>VTV 1</li>
-                        <li>VTV 1</li>
-                    </ul>
-                </nav>
-                <nav>
-                    <ul class="vov">
-                        <li>
-                            <img class="icon" src="https://vov.vn/themes/custom/vovvn/logo.svg">
-                        </li>
-                        <li>
-                            Thứ Tư, ngày 5 tháng 10 năm 2022
-                        </li>
-                        <li>
-                            <img class="icon"
-                                src="https://t4.ftcdn.net/jpg/03/92/71/99/360_F_392719944_L0LYv3e7QozB2tsj3CfUN0HPC8eZQOWb.jpg">
-
-                        </li>
-                        <li class="function">
-                            listen and watch
-                        </li>
-                        <li>
-                            English
-                        </li>
-                        <li>
-                            <input type="text">
-                        </li>
-                    </ul>
-                </nav>
+            <div class="vov">
+                <ul class="vov__name">
+                    <!-- <li><i class="fa-solid fa-house"></i></li> -->
+                    <li>VOV1</li>
+                    <li>VOV2</li>
+                    <li>VOV3</li>
+                    <li>VOV4</li>
+                    <li>VOV5</li>
+                    <li>VOV6</li>
+                    <li>VOV GT</li>
+                    <li>VTC HD</li>
+                </ul>
+            </div>
+            <div class="infor">
+                <div>
+                    <a href="" class="infor__logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Logo_VOV.svg/1200px-Logo_VOV.svg.png"
+                            alt="">
+                    </a>
+                </div>
+                <div>
+                    <p>Thứ 5, nagy 23 tháng 10 nă 2022</p>
+                </div>
+                <div class="infor__logoSocial">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div>
+                    <p>xem & nghe </p>
+                </div>
+                <div>
+                    <p>English </p>
+                </div>
+                <div>
+                    <input type="text" class="input">
+                </div>
             </div>
     </div>
-    <div class="header_mainmenu">
-        <div class="home-icon">
-            <i class="fa fa-home" aria-hidden="true"></i>
-        </div>
+    <div class="fuild_header">
+        <div class="header_mainmenu">
+            <div class="home-icon">
+                <a href="<?php echo  get_home_url() ?>"> <i class="fa fa-home" aria-hidden="true"></i>
+                </a>
+            </div>
 
-        <ul>
-            <?php
+            <ul>
+                <?php
         $categories = get_categories(array(
         "post_type"=>'post',
         "orderedby"=> "name",
@@ -83,5 +82,6 @@
             printf('</li>');
         }
         ?>
-        </ul>
+            </ul>
+        </div>
     </div>

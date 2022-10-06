@@ -4,16 +4,24 @@
 */
 
 get_header(); ?>
-<section>
-    <div class="home-container">
 
-        <hr class="gradient-line">
-        <?php get_template_part('teamplate-content/home', 'shownewpost'); ?>
+<main>
+    <div class="content">
+        <div class="top_content">
+            <div class="top_content_left">
+                <?php get_template_part('teamplate-content/home', 'show_random_post'); ?>
+                <?php get_template_part('teamplate-content/home', 'random_title'); ?>
+            </div>
+            <div class="top_content_center">
+                <?php get_template_part('teamplate-content/home', 'show-standing'); ?>
+
+            </div>
+
+        </div>
     </div>
-    <?php get_template_part('teamplate-content/home', 'show_standing_post'); ?>
-    <?php get_template_part('teamplate-content/home', 'show_random_post'); ?>
-    </div>
+</main>
 
-    </main>
 
-    <?php get_footer(); ?>
+
+
+<?php get_footer(); ?>
