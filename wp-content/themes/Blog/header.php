@@ -12,7 +12,17 @@
     <meta charset="<?php bloginfo('charset'); ?>" />
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- slide -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Bookstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!--  -->
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+
+
+
     <?php wp_head(); ?>
 </head>
 
@@ -40,7 +50,7 @@
                     </a>
                 </div>
                 <div>
-                    <p>Thứ 5, nagy 23 tháng 10 nă 2022</p>
+                    <p>Thứ Ba, ngày 11 tháng 10 năm 2022</p>
                 </div>
                 <div class="infor__logoSocial">
                     <i class="fa-brands fa-facebook"></i>
@@ -68,20 +78,22 @@
 
             <ul>
                 <?php
-        $categories = get_categories(array(
-        "post_type"=>'post',
-        "orderedby"=> "name",
-        "parent" => 0
-        ));
+                $categories = get_categories(array(
+                    "post_type" => 'post',
+                    "orderedby" => "name",
+                    "parent" => 0
+                ));
 
-        forEach($categories as $category){
-        printf ('<li class="category-name">') ;
-            printf('<a href="%1$s" class="button"><span>%2$s</span> </a>',
-            esc_url(get_category_link($category->term_id)),
-            esc_html($category->name));
-            printf('</li>');
-        }
-        ?>
+                foreach ($categories as $category) {
+                    printf('<li class="category-name">');
+                    printf(
+                        '<a href="%1$s" class="button"><span>%2$s</span> </a>',
+                        esc_url(get_category_link($category->term_id)),
+                        esc_html($category->name)
+                    );
+                    printf('</li>');
+                }
+                ?>
             </ul>
         </div>
     </div>

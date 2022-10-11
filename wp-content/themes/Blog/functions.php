@@ -163,7 +163,7 @@ if (!function_exists('congbio_pagination')) {
 add_filter( 'the_title', 'shorten_post_title', 10, 2 );
 function shorten_post_title( $title, $id ) {
     if (get_post_type( $id ) === 'post' & !is_single() ) {
-        return wp_trim_words( $title, 5 ); // thay đổi số từ bạn muốn hiển thị
+        return wp_trim_words( $title, 15 ); // thay đổi số từ bạn muốn hiển thị
     } else {
         return $title;
     }
@@ -269,7 +269,7 @@ if (!function_exists('congbio_entry_content')) {
   {
     if (!is_single()) :
       
-      the_excerpt(15);
+      the_excerpt(10);
     else :
       the_content();
       /*

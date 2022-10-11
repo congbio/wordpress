@@ -1,4 +1,42 @@
- main{
-
-    
- }
+main {
+  margin-top: 20px;
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    .top_content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      a {
+        font-size: 18px;
+        color: blue;
+        text-transform: capitalize;
+      }
+      &_left {
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+        .random-post {
+        }
+        .random_title {
+          margin-bottom: 10px;
+          padding: 10px 0 10px;
+          h3 {
+            line-height: 25px;
+            a {
+              // font-size: 20px;
+              // color: blue;
+            }
+          }
+        }
+      }
+      &_right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+      }
+    }
+  }
+}
