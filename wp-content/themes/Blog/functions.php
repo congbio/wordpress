@@ -68,8 +68,8 @@ if (!function_exists('congbio_theme_setup')) {
 if (!function_exists('congbio_logo')) {
   function congbio_logo()
   { ?>
-    <div class="logo">
-      <div class="site-name">
+<div class="logo">
+    <div class="site-name">
         <?php if (is_home()) {
           printf(
             '<h1 id = logoimage ><a href="%1$s" title="%2$s">%3$s</a></h1>',
@@ -86,10 +86,10 @@ if (!function_exists('congbio_logo')) {
           );
         } // endif 
         ?>
-      </div>
-      <!-- <div class="site-description"><?php bloginfo('description'); ?></div> -->
     </div>
-  <?php }
+    <!-- <div class="site-description"><?php bloginfo('description'); ?></div> -->
+</div>
+<?php }
 }
 
 
@@ -121,18 +121,18 @@ if (!function_exists('congbio_pagination')) {
   {
     
   ?>
-    <nav class="pagination" role="navigation">
-      <?php if (get_next_post_link()) : ?>
-        <div class="prev"><?php next_posts_link(__('OlderPosts', 'congbio')); ?></div>
-      <?php endif; ?>
+<nav class="pagination" role="navigation">
+    <?php if (get_next_post_link()) : ?>
+    <div class="prev"><?php next_posts_link(__('OlderPosts', 'congbio')); ?></div>
+    <?php endif; ?>
 
 
-      <?php if (get_previous_post_link()) : ?>
-        <div class="next"><?php previous_posts_link(__('NewerPosts', 'congbio')); ?></div>
-      <?php endif; ?>
+    <?php if (get_previous_post_link()) : ?>
+    <div class="next"><?php previous_posts_link(__('NewerPosts', 'congbio')); ?></div>
+    <?php endif; ?>
 
 
-    </nav><?php
+</nav><?php
         }
       }
 
@@ -147,14 +147,16 @@ if (!function_exists('congbio_pagination')) {
       if ( !function_exists('congbio_thumbnail') ) {
         function congbio_thumbnail($size) {
           if( !is_single() && has_post_thumbnail() && !post_password_required() || has_post_format('image') ) : ?>
-          <a href="<?php the_permalink(); ?>">
-          <div class="post-thumbnail"><?php the_post_thumbnail( $size ); ?></div>
-          </a>
-          <?php else : ?>
-            <a href="<?php the_permalink(); ?>">
-          <div class="post-thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxddtPSxt3mS3QjGibU-bVEPkoBgh_852nNRuU2_CuZ2sEEJJD9VEcGBZ9OGmlv_LmGdg&usqp=CAU" alt="image empaty"></div>
-          </a>
-        <?php endif;
+<a href="<?php the_permalink(); ?>">
+    <div class="post-thumbnail"><?php the_post_thumbnail( $size ); ?></div>
+</a>
+<?php else : ?>
+<a href="<?php the_permalink(); ?>">
+    <div class="post-thumbnail"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxddtPSxt3mS3QjGibU-bVEPkoBgh_852nNRuU2_CuZ2sEEJJD9VEcGBZ9OGmlv_LmGdg&usqp=CAU"
+            alt="image empaty"></div>
+</a>
+<?php endif;
   }
 }
 
@@ -178,17 +180,17 @@ if (!function_exists('congbio_entry_header')) {
   function congbio_entry_header()
   {
     if (is_single()) : ?>
-      <h1 class="entry-title">
-        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-          <?php the_title(); ?>
-        </a>
-      </h1>
-    <?php else : ?>
-      <h2 class="entry-title">
-        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-          <?php the_title(); ?>
-        </a>
-      </h2>
+<h1 class="entry-title">
+    <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+        <?php the_title(); ?>
+    </a>
+</h1>
+<?php else : ?>
+<h2 class="entry-title">
+    <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+        <?php the_title(); ?>
+    </a>
+</h2>
 <?php
 
 
@@ -315,14 +317,15 @@ function sm_meta_callback( $post ) {
   $featured = get_post_meta( $post->ID );
   ?>
 <p>
-  <div class="sm-row-content">
-      <label for="meta-checkbox">
-          <input type="checkbox" name="meta-checkbox" id="meta-checkbox" value="yes" <?php if ( isset ( $featured['meta-checkbox'] ) ) checked( $featured['meta-checkbox'][0], 'yes' ); ?> />
-          <?php _e( 'Featured this post', 'sm-textdomain' )?>
-      </label>        
-  </div>
-</p> 
-  <?php
+<div class="sm-row-content">
+    <label for="meta-checkbox">
+        <input type="checkbox" name="meta-checkbox" id="meta-checkbox" value="yes"
+            <?php if ( isset ( $featured['meta-checkbox'] ) ) checked( $featured['meta-checkbox'][0], 'yes' ); ?> />
+        <?php _e( 'Featured this post', 'sm-textdomain' )?>
+    </label>
+</div>
+</p>
+<?php
 }
 }
 add_action( 'add_meta_boxes', 'sm_custom_meta' );
@@ -468,3 +471,45 @@ wp_enqueue_script('slide-script');
 
 }
 add_action('wp_enqueue_scripts', 'congbio_styles');
+
+// Return API
+
+add_action( 'rest_api_init', function() {
+    register_rest_route( 'blog/v1', '/products', [
+      'methods' => 'GET',
+      'callback' => 'get_projectss',
+   
+    ] );
+  } );
+  
+  // Get all projects and assign thumbnail
+  function get_projectss( $params ) {
+    // get alllllllllllllll -------------------------------
+    // $projects =  get_posts( [
+    //   'post_type' => 'post',
+    //   'posts_per_page' => 10
+    // ] );
+  
+    // foreach( $projects as &$p ) {
+    //   $p->thumbnail = get_the_post_thumbnail_url( $p->ID );
+    // }
+    // query -------------------------------
+    //  global $wpdb;
+    //   $post = $wpdb->get_results( "SELECT * FROM product");
+$post = new WP_Query(array(
+      'post_type'=>'post',
+    ));
+  
+  $postResult = array();
+  while($post -> have_posts()){
+    $post ->the_post();
+    array_push($postResult,array(
+      'id'=>get_the_ID(),
+      'title'=>get_the_title(),
+      'link'=>get_the_permalink(),
+       
+
+    ));
+  }
+    return $postResult;
+  }

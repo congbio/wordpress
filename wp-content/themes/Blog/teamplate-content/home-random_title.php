@@ -2,7 +2,8 @@
 $args = array(
 	'posts_per_page' => 10,  //Số lượng bài viết muốn lấy
 	'orderby' => 'rand',
-	'post_type' => 'post'
+	'post_type' => 'post',
+	
 );
 $featured = new WP_Query($args);
 ?>
