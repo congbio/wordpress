@@ -389,6 +389,7 @@ function bizberg_shop_get_menu_woocommerce_label(){
 
 <i class="fas fa-bars"></i>
 <span><?php echo esc_html( $woocommerce_category_menu_text ); ?></span>
+<h1>h</h1>
 <i class="fas fa-angle-down"></i>
 
 <?php
