@@ -1,0 +1,156 @@
+2022-11-01T10:46:58+00:00 CRITICAL Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, array given in C:\xampp\htdocs\wordpress\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php:2284
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php(2284): json_decode(Array, true)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\advanced-import\admin\class-elementor-import.php(138): Advanced_Import_Admin->isJson(Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\advanced-import\admin\class-elementor-import.php(224): Advanced_Import_Elementor->elementor_data(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php(2303): Advanced_Import_Elementor->process_elementor_posts()
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php(1243): Advanced_Import_Admin->import_menu_and_options()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): Advanced_Import_Admin->import_content('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(187): do_action('wp_ajax_import_...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\advanced-import\admin\class-advanced-import-admin.php on line 2284
+
+2022-11-01T12:15:02+00:00 CRITICAL syntax error, unexpected single-quoted string "init", expecting variable in C:\xampp\htdocs\wordpress\wp-content\plugins\cyclone-demo-importer\woocommerce.php on line 56
+
+2022-11-01T12:16:23+00:00 CRITICAL syntax error, unexpected identifier "add_action" in C:\xampp\htdocs\wordpress\wp-content\plugins\cyclone-demo-importer\woocommerce.php on line 63
+
+2022-11-01T12:21:04+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\wordpress\wp-content\plugins\cyclone-demo-importer\woocommerce.php on line 63
+
+2022-11-01T12:23:55+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:24:06+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:24:07+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:24:25+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:24:28+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:24:42+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:24:56+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:24:56+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:25:03+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:25:05+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:25:12+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
+2022-11-01T12:25:19+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "bizberg_woocommerce_phone_header" not found or invalid function name in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(598): do_action('init')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 307
+
