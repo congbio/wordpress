@@ -3,11 +3,14 @@
         <div class="entry-thumbnail">
             <?php congbio_thumbnail('large') ?>
         </div>
-        <div class="entry-header">
-            <?php congbio_entry_header(); ?>
-        </div>
+        
+        
         <div class="entry-content">
-            <?php congbio_entry_content(); ?>
+            <h1 class="header-title">
+
+                <?php congbio_entry_header(); ?>
+            </h1>
+            <!-- <?php congbio_entry_content(); ?> -->
             <?php (is_single() ? congbio_entry_tag() : ''); ?>
         </div>
     </article>

@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64940d9e581733624f722b3b719d17e0c805d9a6
 // Trang để tham khảo
 // https://stackoverflow.com/questions/5164404/json-decode-to-array
 $api_url = 'https://6290540a27f4ba1c65b73fb1.mockapi.io/dataWordpress';
@@ -14,7 +18,10 @@ $user_data = array_slice($user_data, 0, 9);
 // Print data if need to debug
 //print_r($user_data);
 // Traverse array and display user data
+<<<<<<< HEAD
 print_r($user_data);
+=======
+>>>>>>> 64940d9e581733624f722b3b719d17e0c805d9a6
 foreach ($user_data as $user) {
     echo '
            <div class="product-small box ">

@@ -1,7 +1,6 @@
 <div class="home_newpost">
-
-    <ul class="news">
-        <?php $postquery = new WP_Query(array('posts_per_page' => '6'));
+ 
+        <?php $postquery = new WP_Query(array('posts_per_page' => '3'));
 		if ($postquery->have_posts()) {
 			while ($postquery->have_posts()) : $postquery->the_post();
 				$do_not_duplicate = $post->ID;

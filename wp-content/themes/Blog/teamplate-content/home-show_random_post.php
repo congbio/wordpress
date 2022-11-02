@@ -21,5 +21,4 @@ $featured = new WP_Query($args);
     </div>
     <?php endforeach;
 wp_reset_postdata();?>
-
 </div>
