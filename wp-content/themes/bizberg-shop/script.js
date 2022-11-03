@@ -176,3 +176,4 @@ jQuery(document).on( 'click','.bs_tablet_mobile .dropdown-menu li a', function()
         $this.closest('li').addClass('active');
     },500);
 })
+

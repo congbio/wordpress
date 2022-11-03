@@ -99,7 +99,7 @@ function add_remove_body_sticky_class( status ){
     // If parent menu has submenu then add down arrow
     jQuery('#responsive-menu > li').each(function(){
         if( jQuery(this).find('ul').hasClass('sub-menu') ){
-            jQuery(this).find('ul:first').prev('a').find('.eb_menu_title').append('<i class="has_sub_menu_parent fa fa-angle-down"></i>');
+            jQuery(this).find('ul:first').prev('a').find('.eb_menu_title').append('<i id="anhienmenu" class="has_sub_menu_parent fa fa-angle-down"></i>');
         }
     });
 

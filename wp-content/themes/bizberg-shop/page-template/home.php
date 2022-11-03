@@ -27,4 +27,6 @@ do_action( 'bizberg_shop_before_clients_logo' );
 bizberg_shop_get_clients_logo(); 
 
 do_action( 'bizberg_shop_before_footer' ); 
-get_footer();
+?>
+<!-- <script src="../showheh.js"></script> -->
+<?php get_footer();
