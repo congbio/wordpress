@@ -418,7 +418,15 @@ function bizberg_shop_add_woo_cat_on_menus( $items, $args ){
     </a>
 
     <?php
-            $args1 = array(
+            // $args1 = array(
+            //     'taxonomy'   => 'product_cat',
+            //     'title_li'   => '',
+            //     'hide_empty' => 1,
+            //     'show_count' => 0,
+            //     'exclude'    => array_filter( $exclude_categories_filter ),
+            //     'depth'      => bizberg_get_theme_mod( 'woocommerce_category_menu_depth' )
+            // );
+             $args1 = array(
                 'taxonomy'   => 'product_cat',
                 'title_li'   => '',
                 'hide_empty' => 1,
@@ -426,10 +434,33 @@ function bizberg_shop_add_woo_cat_on_menus( $items, $args ){
                 'exclude'    => array_filter( $exclude_categories_filter ),
                 'depth'      => bizberg_get_theme_mod( 'woocommerce_category_menu_depth' )
             );
+            $args = array(
+        'post_type'      => 'product',
+        'taxonomy'   => 'product_cat',
+        'parent'    => 0 ,
+        'number'=>12,
+        // 'order' => 'desc',
+    );
+    // render category menu hiển thị menu category
+    $categories = get_categories( $args );
+        echo '<ul id="categories-menu-product-comestic" class="product_cats_menu">';
+        echo '<li class="cat-item" > <img 
+        src="https://bizweb.dktcdn.net/100/426/076/themes/877813/assets/menu_icon_1.png?1667286845678" alt ="ưu đãi"/> <a>Ưu đãi hot 49%</a>';
+       forEach($categories as $category){
+	    $thumbnail_id = get_term_meta( $category->term_id, 'thumbnail_id', true );
+	    $image = wp_get_attachment_url( $thumbnail_id );
+       
+        printf ('<li class="cat-item" >') ;
+        printf('<img src="'.$image.'" alt="'.$category->name.'">') ;
+        printf('<a href="%1$s" class="button"><span>%2$s</span> </a>',
+        esc_url(get_category_link($category->term_id)),
+        esc_html($category->name));
+        printf('</li>');
+}
+            echo '</ul>'; 
+     
 
-            echo '<ul class="product_cats_menu">';
-                wp_list_categories( $args1 );
-            echo '</ul>'; ?>
+   ?>
 
 </li>
 

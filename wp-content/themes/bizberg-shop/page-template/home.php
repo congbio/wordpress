@@ -13,7 +13,7 @@ bizberg_shop_get_services();
 
 do_action( 'bizberg_shop_before_sales_banner_section' );
 bizberg_shop_get_sales_banner(); 
-
+// category
 do_action( 'bizberg_shop_before_top_categories_section' );
 bizberg_shop_get_top_categories();
 

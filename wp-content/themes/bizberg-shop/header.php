@@ -176,36 +176,36 @@ $primary_header_layout = bizberg_get_theme_mod( 'primary_header_layout' ); ?>
     </header><!-- header section end -->
 
     <?php 
-// global $template; // For elementor
-// if( is_page_template( 'page-templates/full-width.php' ) 
-// 	|| is_404() 
-// 	|| is_page_template( 'contact-us.php' )
-// 	|| is_page_template( 'page-templates/page-fullwidth-transparent-header.php' )
-// 	|| is_page_template( 'page-template/home.php' )
-// 	|| basename($template) == 'header-footer.php' ){
-// 	// no breadcrum
-// 	echo '';
-// } elseif( ! ( is_front_page() || is_home() ) ){
-// 	bizberg_get_breadcrums();
-// } else { 
+global $template; // For elementor
+if( is_page_template( 'page-templates/full-width.php' ) 
+	|| is_404() 
+	|| is_page_template( 'contact-us.php' )
+	|| is_page_template( 'page-templates/page-fullwidth-transparent-header.php' )
+	|| is_page_template( 'page-template/home.php' )
+	|| basename($template) == 'header-footer.php' ){
+	// no breadcrum
+	echo '';
+} elseif( ! ( is_front_page() || is_home() ) ){
+	bizberg_get_breadcrums();
+} else { 
 
-// 	$status = bizberg_get_theme_mod( 'slider_banner' );
-// 	switch ( $status ) {
-// 		case 'slider':
-// 			bizberg_get_slider_1();
-// 			break;
+	$status = bizberg_get_theme_mod( 'slider_banner' );
+	switch ( $status ) {
+		case 'slider':
+			bizberg_get_slider_1();
+			break;
 
-// 		case 'banner':
-// 			bizberg_get_banner();
-// 			break;
+		case 'banner':
+			bizberg_get_banner();
+			break;
 
-// 		case 'video':
-// 			bizberg_get_video();
-// 			break;
+		case 'video':
+			bizberg_get_video();
+			break;
 		
-// 		default:
-// 			# code...
-// 			break;
-// 	}
+		default:
+			# code...
+			break;
+	}
 
-// } 
+} 

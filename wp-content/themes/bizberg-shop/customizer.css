@@ -1,4 +1,4 @@
-.customize-partial-edit-shortcut-woo_slider_pages{
+.customize-partial-edit-shortcut-woo_slider_pages {
 	float: right;
 	right: 0;
 	top: -10px;
@@ -8,7 +8,28 @@
 	position: relative;
 }
 
-.customize-partial-edit-shortcut-woocommerce_category_menu_text{
+.customize-partial-edit-shortcut-woocommerce_category_menu_text {
 	left: 15px;
-    top: 0px;
+	top: 0px;
+}
+/* -------------------------------------menu category -----------------------------------*/
+ul#categories-menu-product-comestic {
+}
+ul#categories-menu-product-comestic .cat-item {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+ul#categories-menu-product-comestic .cat-item img {
+	
+	width: 23px;
+	height: 23px;
+	object-fit: contain;
+	margin-left: 20px;
+}
+ul#categories-menu-product-comestic .cat-item a {
+	background-color: white;
+	box-shadow: none;
+	border: none;
 }
