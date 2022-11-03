@@ -1,10 +1,11 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <?php wp_head(); ?>
 </head>
 
 <?php
@@ -16,7 +17,7 @@ if( function_exists( 'bizberg_get_homepage_style_class' ) ){
 
 <body <?php body_class( 'bizberg sidebar ' . $body_class ); ?>>
 
-<?php 
+    <?php 
 
 /**
 * https://make.wordpress.org/themes/2019/03/29/addition-of-new-wp_body_open-hook/
@@ -32,17 +33,17 @@ do_action( 'bizberg_after_body' );
 
 $primary_header_layout = bizberg_get_theme_mod( 'primary_header_layout' ); ?>
 
-<header id="masthead" class="primary_header_<?php echo esc_attr( $primary_header_layout ); ?>">
+    <header id="masthead" class="primary_header_<?php echo esc_attr( $primary_header_layout ); ?>">
 
-	<a class="skip-link screen-reader-text" href="#content">
-		<?php esc_html_e( 'Skip to content', 'bizberg' ); ?>		
-	</a>
+        <a class="skip-link screen-reader-text" href="#content">
+            <?php esc_html_e( 'Skip to content', 'bizberg' ); ?>
+        </a>
 
-	<?php 
+        <?php 
 	do_action( 'bizberg_top_header' );
 	?>
 
-	<?php 
+        <?php 
 
 	$header_2_position = bizberg_get_theme_mod( 'header_2_position' );
 	$flex_container = 'bizberg-flex-container';
@@ -61,73 +62,74 @@ $primary_header_layout = bizberg_get_theme_mod( 'primary_header_layout' ); ?>
 
 	if( $primary_header_layout == 'center' ){ ?>
 
-		<div class="primary_header_2_wrapper <?php echo esc_attr( $primary_header_layout_width == "100%" ? 'full_width' : '' ); ?>">
+        <div
+            class="primary_header_2_wrapper <?php echo esc_attr( $primary_header_layout_width == "100%" ? 'full_width' : '' ); ?>">
 
-			<div class="container <?php echo esc_attr( $flex_container ); ?>">
+            <div class="container <?php echo esc_attr( $flex_container ); ?>">
 
-				<div class="row <?php echo esc_attr( $flex_container ); ?>">
+                <div class="row <?php echo esc_attr( $flex_container ); ?>">
 
-					<?php
+                    <?php
 
 					if( $header_2_position == 'left' ){ ?>
 
-						<div class="<?php echo esc_attr( $header_columns_class[0] ); ?>">
-							<div class="primary_header_2">
-								<?php bizberg_get_primary_header_logo(); ?>
-					   		</div>
-					   	</div>
-					   	<div class="<?php echo esc_attr( $header_columns_class[1] ); ?>">
-					   		<div class="custom_header_content">
-					   			<?php bizberg_get_last_item_header(); ?>
-					   		</div>
-					   	</div>
+                    <div class="<?php echo esc_attr( $header_columns_class[0] ); ?>">
+                        <div class="primary_header_2">
+                            <?php bizberg_get_primary_header_logo(); ?>
+                        </div>
+                    </div>
+                    <div class="<?php echo esc_attr( $header_columns_class[1] ); ?>">
+                        <div class="custom_header_content">
+                            <?php bizberg_get_last_item_header(); ?>
+                        </div>
+                    </div>
 
-					   	<?php
+                    <?php
 
 					} else { ?>
 
-						<div class="<?php echo esc_attr( $header_columns_middle_style_class[0] ); ?>">
-							<div class="custom_header_content_logo_center left">
-					   			<?php bizberg_get_first_item_header_logo_center(); ?>
-					   		</div>
-						</div>
+                    <div class="<?php echo esc_attr( $header_columns_middle_style_class[0] ); ?>">
+                        <div class="custom_header_content_logo_center left">
+                            <?php bizberg_get_first_item_header_logo_center(); ?>
+                        </div>
+                    </div>
 
-						<div class="<?php echo esc_attr( $header_columns_middle_style_class[1] ); ?>">
-							<div class="primary_header_2">
-								<?php bizberg_get_primary_header_logo(); ?>
-					   		</div>
-					   	</div>
+                    <div class="<?php echo esc_attr( $header_columns_middle_style_class[1] ); ?>">
+                        <div class="primary_header_2">
+                            <?php bizberg_get_primary_header_logo(); ?>
+                        </div>
+                    </div>
 
-					   	<div class="<?php echo esc_attr( $header_columns_middle_style_class[2] ); ?>">
-					   		<div class="custom_header_content_logo_center right">
-					   			<?php bizberg_get_last_item_header_logo_center(); ?>
-					   		</div>
-					   	</div>
+                    <div class="<?php echo esc_attr( $header_columns_middle_style_class[2] ); ?>">
+                        <div class="custom_header_content_logo_center right">
+                            <?php bizberg_get_last_item_header_logo_center(); ?>
+                        </div>
+                    </div>
 
-						<?php
+                    <?php
 
 					} ?>
 
-				</div>
+                </div>
 
-			</div>
+            </div>
 
-		</div>		
+        </div>
 
-		<?php
+        <?php
 	} ?>
 
-    <nav class="navbar navbar-default with-slicknav">
+        <nav class="navbar navbar-default with-slicknav">
 
-        <div id="navbar" class="collapse navbar-collapse navbar-arrow">
+            <div id="navbar" class="collapse navbar-collapse navbar-arrow">
 
-            <div class="container">
+                <div class="container">
 
-            	<div class="row">
+                    <div class="row">
 
-	            	<div class="bizberg_header_wrapper">
+                        <div class="bizberg_header_wrapper">
 
-		                <?php 	                
+                            <?php 	                
 		                
 		                bizberg_get_primary_header_logo();	                	               
 
@@ -159,50 +161,51 @@ $primary_header_layout = bizberg_get_theme_mod( 'primary_header_layout' ); ?>
 		                
 		                ?>
 
-		            	<div id="slicknav-mobile" class="<?php echo ( !has_custom_logo() ? 'text-logo' : '' ); ?>"></div>
+                            <div id="slicknav-mobile" class="<?php echo ( !has_custom_logo() ? 'text-logo' : '' ); ?>"></div>
 
-		            </div>
+                        </div>
 
-		        </div>
+                    </div>
+
+                </div>
 
             </div>
+            <!--/.nav-collapse -->
 
-        </div><!--/.nav-collapse -->       
+        </nav>
+    </header><!-- header section end -->
 
-    </nav> 
-</header><!-- header section end -->
+    <?php 
+// global $template; // For elementor
+// if( is_page_template( 'page-templates/full-width.php' ) 
+// 	|| is_404() 
+// 	|| is_page_template( 'contact-us.php' )
+// 	|| is_page_template( 'page-templates/page-fullwidth-transparent-header.php' )
+// 	|| is_page_template( 'page-template/home.php' )
+// 	|| basename($template) == 'header-footer.php' ){
+// 	// no breadcrum
+// 	echo '';
+// } elseif( ! ( is_front_page() || is_home() ) ){
+// 	bizberg_get_breadcrums();
+// } else { 
 
-<?php 
-global $template; // For elementor
-if( is_page_template( 'page-templates/full-width.php' ) 
-	|| is_404() 
-	|| is_page_template( 'contact-us.php' )
-	|| is_page_template( 'page-templates/page-fullwidth-transparent-header.php' )
-	|| is_page_template( 'page-template/home.php' )
-	|| basename($template) == 'header-footer.php' ){
-	// no breadcrum
-	echo '';
-} elseif( ! ( is_front_page() || is_home() ) ){
-	bizberg_get_breadcrums();
-} else { 
+// 	$status = bizberg_get_theme_mod( 'slider_banner' );
+// 	switch ( $status ) {
+// 		case 'slider':
+// 			bizberg_get_slider_1();
+// 			break;
 
-	$status = bizberg_get_theme_mod( 'slider_banner' );
-	switch ( $status ) {
-		case 'slider':
-			bizberg_get_slider_1();
-			break;
+// 		case 'banner':
+// 			bizberg_get_banner();
+// 			break;
 
-		case 'banner':
-			bizberg_get_banner();
-			break;
-
-		case 'video':
-			bizberg_get_video();
-			break;
+// 		case 'video':
+// 			bizberg_get_video();
+// 			break;
 		
-		default:
-			# code...
-			break;
-	}
+// 		default:
+// 			# code...
+// 			break;
+// 	}
 
-} 
+// } 

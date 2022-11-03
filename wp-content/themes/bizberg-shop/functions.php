@@ -726,15 +726,11 @@ function bizberg_shop_get_slider_content(){
 function bizberg_shop_get_slider(){  ?>
 
 <section class="ecommerce-banner">
-
     <div class="container">
-
         <div class="row">
-
             <?php 
                 echo wp_kses_post( bizberg_shop_get_slider_content() );
                 ?>
-
         </div>
 
     </div>
