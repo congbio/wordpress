@@ -15,6 +15,7 @@ Tested up to: 5.8
 Requires PHP: 5.6
 */
 @import url('./customizer.css');
+@import url('./page-tag.css');
 
 p {
     font-size: 15px;
@@ -527,3 +528,4 @@ body .categories-logo h4{margin-top: 10px;font-weight: normal;}
     position: relative;
     z-index: 0;
 }
+
