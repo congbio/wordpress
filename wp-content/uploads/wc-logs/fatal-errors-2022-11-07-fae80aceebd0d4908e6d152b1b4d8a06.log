@@ -1,0 +1,24 @@
+2022-11-07T10:17:59+00:00 CRITICAL Uncaught Error: Value of type null is not callable in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-tag.php:21
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-tag.php on line 21
+
+2022-11-07T10:18:22+00:00 CRITICAL Uncaught Error: Value of type null is not callable in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-tag.php:21
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-tag.php on line 21
+
+2022-11-07T10:19:33+00:00 CRITICAL Uncaught Error: Value of type null is not callable in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-tag.php:21
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-tag.php on line 21
+
