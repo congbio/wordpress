@@ -59,8 +59,36 @@ function bizberg_woocommerce_phone_header() {
  function bizberg_woocommerce_phone_menu(){
 
 	ob_start(); ?>
-<div>fdfdfdfdffffff</div>
+<div class="phone-cong-content"><img
+        src="https://bizweb.dktcdn.net/100/426/076/themes/877813/assets/phone_icon.png?1667286845678" />
+    <div class="content">
+        <p class="title"> Hỗ trợ khách hàng</p>
+        <p class="phone"> 0338761194</p>
+    </div>
 
+</div>
+<div class="phone-cong-content user">
+
+    <a href="<?php  echo get_permalink( wc_get_page_id( 'myaccount' )) ; ?>  " class="phone-cong-content user">
+        <img src="https://bizweb.dktcdn.net/100/426/076/themes/877813/assets/account_icon.png?1667286845678" />
+        <?php 
+		if(is_user_logged_in()){
+			echo ' <div class="content">
+            <p class="user">MY ACCOUNT</p>
+        </div>';
+		}
+		else{
+			echo '<div class="content">
+            <p class="title"> Tài khoản</p>
+            <p class="phone"> Đăng nhập</p>
+        </div>';
+		}
+		?>
+
+    </a>
+
+
+</div>
 <?php
 return ob_get_clean();
 }
@@ -77,7 +105,7 @@ function bizberg_woocommerce_account_menu(){
 
 ob_start(); ?>
 
-<div class="header_dropdown_wrapper">
+<div class=" header_dropdown_wrapper">
 
     <?php 
 		if( !is_user_logged_in() ){

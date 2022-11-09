@@ -701,13 +701,7 @@ function bizberg_shop_get_slider_content(){
                         </div>
                         <div class="swiper-content <?php echo esc_attr( $align ) . ' slide_id_' . absint( $post->ID ); ?>"
                             style="width: <?php echo esc_attr( $content_width ); ?>">
-                            <?php 
-                                        echo wp_kses_post( bizberg_shop_get_slider_meta( $woo_slider_pages , 'subtitle' , $post->ID , '<h4 class="elementor-exclude" style="color:' . esc_attr( $color_subtitle ) . '">' , '</h4>' ) );
-                                        ?>
 
-                            <h2 class="elementor-exclude" style="color: <?php echo esc_attr( $color_title ); ?>">
-                                <?php the_title(); ?>
-                            </h2>
 
                             <div style="color: <?php echo esc_attr( $color_content ); ?>;">
                                 <?php the_excerpt(); ?>
@@ -733,8 +727,8 @@ function bizberg_shop_get_slider_content(){
                 <?php 
 
                         endwhile; ?>
-
             </div>
+
 
         </div>
 
@@ -758,9 +752,31 @@ function bizberg_shop_get_slider(){  ?>
 <section class="ecommerce-banner">
     <div class="container">
         <div class="row">
-            <?php 
+
+            <div class="col-lg-10 m-0 col-sm-12">
+                <?php 
                 echo wp_kses_post( bizberg_shop_get_slider_content() );
                 ?>
+            </div>
+            <div class="col-lg-2 m-0 col-sm-6">
+                <div class="swiper-imagebanner-cong">
+                    <img class="img-fluid"
+                        src="//bizweb.dktcdn.net/100/426/076/themes/877813/assets/right_banner_1.jpg?1667286845678" alt=""
+                        width="500">
+                </div>
+                <div class="swiper-imagebanner-cong mt-5">
+                    <img class="img-fluid"
+                        src="//bizweb.dktcdn.net/100/426/076/themes/877813/assets/right_banner_1.jpg?1667286845678" alt=""
+                        width="500" style=>
+                </div>
+                <div class="swiper-imagebanner-cong mt-5 ">
+                    <img class="img-fluid"
+                        src="//bizweb.dktcdn.net/100/426/076/themes/877813/assets/right_banner_1.jpg?1667286845678" alt=""
+                        width="500">
+                </div>
+            </div>
+
+
         </div>
 
     </div>
