@@ -10,3 +10,45 @@
 
 2022-11-09T07:33:56+00:00 CRITICAL syntax error, unexpected token ";", expecting ")" in C:\xampp\htdocs\wordpress\wp-content\plugins\cyclone-demo-importer\woocommerce.php on line 72
 
+2022-11-09T10:39:24+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/bizberg/page-template/component/product.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php:15
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php on line 15
+
+2022-11-09T10:40:06+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/bizberg./component/product.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php:15
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php on line 15
+
+2022-11-09T10:40:26+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/bizberg/component/product.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php:15
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php on line 15
+
+2022-11-09T10:41:03+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/bizberg/page-template/component/product.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php:15
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php on line 15
+
+2022-11-09T10:41:25+00:00 CRITICAL Uncaught Error: Failed opening required './component/product.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php:15
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php on line 15
+
+2022-11-09T10:54:51+00:00 CRITICAL Cannot redeclare renderProduct() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php:790) in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php on line 1010
+
