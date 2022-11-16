@@ -124,9 +124,13 @@ ul#categories-menu-product-comestic .cat-item a {
    .h-container-footer  .footerRight .rightItem{
       display: flex;
       flex-direction: row;
-      gap: 100px;
+      gap: 50px;
     }
   
+    .h-container-footer .footerRight .rightItem .items h3{
+      font-size: 10px;
+      font-weight: 100;
+    }
    .h-container-footer  .items ul li {
       list-style-type: none;
       
@@ -138,6 +142,10 @@ ul#categories-menu-product-comestic .cat-item a {
    .h-container-footer  .items ul li a:hover{
       color: #d82e4d;
     }
+    .h-container-footer .footerRight .reciveInfo ul{
+      font-size: 20px;
+      font-weight: 50;
+    }
    .h-container-footer  .inputInfo{
       display: flex;
     }
@@ -145,7 +153,7 @@ ul#categories-menu-product-comestic .cat-item a {
       background-color: #fff;
     }
    .h-container-footer  .register{
-      width: 80px;
+      width: 90px;
       height: 40px;
       background-color: orange;
       text-align: center;
@@ -162,5 +170,9 @@ ul#categories-menu-product-comestic .cat-item a {
       transform: translate(-50%, -50%);
       margin: 0;
 
+    }
+    .h-container-footer.footerRight.rightItem.items h3{
+      font-size: 20px;
+      font-weight: 200;
     }
     
