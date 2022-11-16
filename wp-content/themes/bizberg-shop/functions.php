@@ -563,7 +563,7 @@ function bizberg_shop_add_inline_css_product_reapeater_title( $css ){
         }
 
     }
-
+              
     return $css;
 
 }
