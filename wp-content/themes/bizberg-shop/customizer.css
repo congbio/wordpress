@@ -65,7 +65,6 @@ ul#categories-menu-product-comestic .cat-item a {
 
 
 /* foooter===================================== */
-
 .h-container-footer {
       width: 1260px;
       margin: 0 auto;
@@ -97,15 +96,29 @@ ul#categories-menu-product-comestic .cat-item a {
       flex-direction: row;
       gap: 15px;
     }
-
+    p{
+      font-size: 13.5px;
+      font-family: 'Poppins';
+      line-height: 1.8;
+      color: #000000;
+    }
+    .h-container-footer  .info .address p{
+      font-size: 13.5px;
+      font-family: 'Poppins';
+      line-height: 1.8;
+      color: #000000;
+    }
    .h-container-footer  .info .address img {
       width: 15px;
       height: 20px;
-      margin-top: 15px;
+      display: flex;
     }
 
    .h-container-footer  .socialMedia {
       margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
     }
 
     .h-container-footer .socialMedia img {
@@ -113,7 +126,7 @@ ul#categories-menu-product-comestic .cat-item a {
       height: 25px;
     }
     .h-container-footer .footerRight{
-      width: 60%;
+      width: 70%;
       height: auto;
       display: flex;
       flex-direction: row;
@@ -122,56 +135,83 @@ ul#categories-menu-product-comestic .cat-item a {
       justify-content: center;
     }
    .h-container-footer  .footerRight .rightItem{
+      width: 60%;
+      height: auto;
       display: flex;
       flex-direction: row;
-      gap: 100px;
+      gap: 50px;
     }
   
+    #inf{
+      font-size: 18px;
+      font-weight: 500;
+      color: black;
+    }
    .h-container-footer  .items ul li {
       list-style-type: none;
       
     }
     .h-container-footer .items ul li a{
-      color: black;
+      font-size: 13.5px;
+      font-family: 'Poppins';
+      line-height: 1.8;
+      color: #000000;
       text-decoration-line: none;
     }
    .h-container-footer  .items ul li a:hover{
       color: #d82e4d;
     }
+    .h-container-footer .footerRight .reciveInfo{
+      width: 40%;
+      height: auto;
+    }
+    .h-container-footer .footerRight .reciveInfo ul{
+      font-size: 13.5px;
+      font-family: 'Poppins';
+      line-height: 1.8;
+    }
    .h-container-footer  .inputInfo{
       display: flex;
     }
     .h-container-footer .inputInfo input{
-      background-color: #fff;
+      width: 230px;
+      height: 30px;
+      background-color: white;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
     }
    .h-container-footer  .register{
       width: 80px;
-      height: 40px;
+      height: 30px;
       background-color: orange;
       text-align: center;
-      align-items: center;
+      align-items: center; 
+      justify-content: center;
       position: relative;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
 
-    }
-    .h-container-footer .register p {
+    } 
+    .h-container-footer .footerRight .reciveInfo .inputInfo .register p{
+      font-size: 13.5px;
+      font-family: 'Poppins';
+      line-height: 1.8;
+      color: #000000;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-
+      bottom: 5px;
+      left: 10px;
     }
     /* ===========================tab */
 .csw-catory-product {
+  
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 30% 70%;
   gap: 10px;
+  
 }
-.csw-poster img {
+/* .csw-poster img {
   margin-left: 50px;
-}
+} */
 .csw-list-product {
   display: flex;
   flex-wrap: wrap;

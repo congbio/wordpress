@@ -1,0 +1,36 @@
+2022-11-16T07:23:47+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php:815
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php(16): renderProduct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php on line 815
+
+2022-11-16T07:35:34+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php:815
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php(16): renderProduct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php on line 815
+
+2022-11-16T07:35:39+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php:815
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php(16): renderProduct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php on line 815
+
+2022-11-16T07:36:18+00:00 CRITICAL Uncaught Error: Object of class WP_Query could not be converted to string in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php:801
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\page-template\home.php(16): renderProduct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\bizberg-shop\functions.php on line 801
+

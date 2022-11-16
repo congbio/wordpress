@@ -788,6 +788,12 @@ function bizberg_shop_get_slider(){  ?>
 }
 function renderProduct(){  
 
+    $categories = get_categories(array(
+        'post_type' => 'product',
+        "parent" => 0,
+        // 'posts_per_page' => 8,
+    
+    ));
 
 $args = [
 'post_type' => 'product',
@@ -795,27 +801,33 @@ $args = [
 'posts_per_page' => 8,
 'order' => 'desc',
 ];
-
+// var_dump($categories);
 $products = new \WP_Query($args);
-
-$html = "";
-$html .= "<div class='csw-catory-product'>";
+ 
+$html = "<div class='container'>";
+$html .= "<div class='csw-catory-product  '>";
     $html .= "<div class='csw-poster'>";
         $html .= "<img src='https://bizweb.dktcdn.net/100/426/076/themes/877813/assets/product_tag_banner.jpg?1667286845678' />";
-        if ($products->have_posts()) {
-        while ($products->have_posts()) {
-        $products->the_post();
+        forEach($categories as $category){
+              $html .= "<div class='csw-product-item'>";
 
-        global $product;
-
-
-        $html .= "<div class='csw-product-item'>";
-
-            $html .= "<h3 class='csw-title'><a href='" . get_the_permalink() . "'>" .$product->get_categories() . "</a></h3>";
+            $html .= "<h3 class='csw-title'><a href='" . get_category_link($category->term_id) . "'>" .$category->name . "</a></h3>";
             $html .= "</div>";
         }
-        }
-        wp_reset_postdata();
+        // if ($products->have_posts()) {
+        // while ($products->have_posts()) {
+        // $products->the_post();
+
+        // global $product;
+
+
+        // $html .= "<div class='csw-product-item'>";
+
+        //     $html .= "<h3 class='csw-title'><a href='" . get_the_permalink() . "'>" .$product->get_categories() . "</a></h3>";
+        //     $html .= "</div>";
+        // }
+        // }
+     
         $html .= "</div>";
     $html .= "<div class='csw-list-product'>";
 
@@ -837,7 +849,7 @@ $html .= "<div class='csw-catory-product'>";
         }
         }
         wp_reset_postdata();
-        $html .= "</div>";
+        $html .= "</div></div> </div>";
 
     echo $html;
 
