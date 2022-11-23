@@ -1,0 +1,86 @@
+2022-11-21T03:36:49+00:00 DEBUG Tt4b_Pixel_Class::inject_add_to_cart_event: hit injectAddToCartEvent
+2022-11-21T03:36:49+00:00 DEBUG Tt4b_Pixel_Class::inject_add_to_cart_event: Missing option "access_token"
+2022-11-21T03:45:14+00:00 DEBUG POST: https://business-api.tiktok.com/open_api/v1.2/tbp/business_profile/disconnect/
+
+{"external_business_id":"tt4b_woocommerce_6374a926bef31","business_platform":"WOO_COMMERCE","is_setup_page":0,"app_id":"7166538892353486850"}
+
+2022-11-21T03:45:14+00:00 DEBUG Tt4b_Mapi_Class::mapi_post: Response: 
+
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json; charset=utf-8
+Content-Length: 103
+X-Api-Deprecation-Info: API for Business Version 1.3 is now live. To avoid disruption to your business, we recommend you migrate all calls to v1.3 as soon as possible. Please visit our migration guide for more details: https://ads.tiktok.com/marketing_api/docs?id=1740029169927169
+X-Domain-Change-Info: We have moved to the new domain business-api.tiktok.com for API services after the Platform Upgrade on 09/30/2021. Please update all of your requests with the new domain if you haven't done so already. For more information, please visit https://ads.tiktok.com/marketing_api/docs?rid=esb88xalm6m&id=1709207085043713
+X-Tt-Logid: 2022112103451401024524517510180774
+Server-Timing: inner; dur=4
+x-tt-trace-host: 01353522928b89e5357d4610314c1c07eef0e4d3bde8060a35cb9ccf1677d469580cf2b7c322bce19167ed6383c74bc77c5e94c6876340e3f214890f064e38b48faed5bb2a4857523f3cf5eb76254c5d16
+Expires: Mon, 21 Nov 2022 03:45:14 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 21 Nov 2022 03:45:14 GMT
+X-Cache: TCP_MISS from a113-171-10-143.deploy.akamaitechnologies.com (AkamaiGHost/10.10.2-45048955) (-)
+Connection: close
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=2, origin; dur=50
+X-Origin-Response-Time: 50,113.171.10.143
+X-Akamai-Request-ID: dbfeb7a
+
+{"code":40104,"message":"The access_token is empty.","request_id":"2022112103451401024524517510180774"}
+
+2022-11-21T03:45:14+00:00 DEBUG POST: https://business-api.tiktok.com/tbp/v2.0/shop/connection/disconnect?external_data=
+
+--- EMPTY STRING ---
+
+2022-11-21T03:45:15+00:00 DEBUG Tt4b_Mapi_Class::tts_shop_disconnect: Response: 
+
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+X-Api-Deprecation-Info: API for Business Version 1.3 is now live. To avoid disruption to your business, we recommend you migrate all calls to v1.3 as soon as possible. Please visit our migration guide for more details: https://ads.tiktok.com/marketing_api/docs?id=1740029169927169
+X-Domain-Change-Info: We have moved to the new domain business-api.tiktok.com for API services after the Platform Upgrade on 09/30/2021. Please update all of your requests with the new domain if you haven't done so already. For more information, please visit https://ads.tiktok.com/marketing_api/docs?rid=esb88xalm6m&id=1709207085043713
+X-Tt-Logid: 2022112103451501024524517510180832
+Server-Timing: inner; dur=8
+x-tt-trace-host: 01353522928b89e5357d4610314c1c07eef0e4d3bde8060a35cb9ccf1677d469580cf2b7c322bce19167ed6383c74bc77c3de4e2160a07747b122f5cd3fade2dba13cf7b61da0c6cb8b3ce7b536c3b0c47
+Expires: Mon, 21 Nov 2022 03:45:15 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 21 Nov 2022 03:45:15 GMT
+X-Cache: TCP_MISS from a113-171-10-143.deploy.akamaitechnologies.com (AkamaiGHost/10.10.2-45048955) (-)
+Connection: close
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=0, origin; dur=50
+X-Origin-Response-Time: 50,113.171.10.143
+X-Akamai-Request-ID: dbff227
+
+{"code":40001,"message":"Permission denied.","request_id":"2022112103451501024524517510180832"}
+
+2022-11-21T04:12:40+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: hit injectStartCheckout
+2022-11-21T04:12:40+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: Missing option "access_token"
+2022-11-21T04:12:45+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: hit injectStartCheckout
+2022-11-21T04:12:45+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: Missing option "access_token"
+2022-11-21T04:13:27+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: hit injectStartCheckout
+2022-11-21T04:13:27+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: Missing option "access_token"
+2022-11-21T04:13:32+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: hit injectStartCheckout
+2022-11-21T04:13:32+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: Missing option "access_token"
+2022-11-21T04:18:19+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: hit injectStartCheckout
+2022-11-21T04:18:19+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: Missing option "access_token"
+2022-11-21T04:18:24+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: hit injectStartCheckout
+2022-11-21T04:18:24+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: Missing option "access_token"
+2022-11-21T04:19:30+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: hit injectPurchaseEvent
+2022-11-21T04:19:30+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: Missing option "access_token"
+2022-11-21T04:19:32+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: hit injectPurchaseEvent
+2022-11-21T04:19:32+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: Missing option "access_token"
+2022-11-21T04:22:57+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: hit injectPurchaseEvent
+2022-11-21T04:22:57+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: Missing option "access_token"
+2022-11-21T04:38:43+00:00 DEBUG Tt4b_Pixel_Class::inject_add_to_cart_event: hit injectAddToCartEvent
+2022-11-21T04:38:43+00:00 DEBUG Tt4b_Pixel_Class::inject_add_to_cart_event: Missing option "access_token"
+2022-11-21T04:38:53+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: hit injectStartCheckout
+2022-11-21T04:38:53+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: Missing option "access_token"
+2022-11-21T04:38:58+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: hit injectStartCheckout
+2022-11-21T04:38:58+00:00 DEBUG Tt4b_Pixel_Class::inject_start_checkout: Missing option "access_token"
+2022-11-21T04:39:18+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: hit injectPurchaseEvent
+2022-11-21T04:39:18+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: Missing option "access_token"
+2022-11-21T04:39:22+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: hit injectPurchaseEvent
+2022-11-21T04:39:22+00:00 DEBUG Tt4b_Pixel_Class::inject_purchase_event: Missing option "access_token"
