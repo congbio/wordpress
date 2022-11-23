@@ -70,20 +70,26 @@ function bizberg_woocommerce_phone_header() {
 <div class="phone-cong-content user">
 
     <a href="<?php  echo get_permalink( wc_get_page_id( 'myaccount' )) ; ?>  " class="phone-cong-content user">
-        <img src="https://bizweb.dktcdn.net/100/426/076/themes/877813/assets/account_icon.png?1667286845678" />
         <?php 
 		if(is_user_logged_in()){
-			echo ' <div class="content">
-            <p class="user">MY ACCOUNT</p>
-        </div>';
-		}
-		else{
-			echo '<div class="content">
+          global $current_user; wp_get_current_user(); ?>
+        <?php if ( is_user_logged_in() ) { 
+            
+        echo '
+        <img src="https://bizweb.dktcdn.net/100/426/076/themes/877813/assets/account_icon.png?1667286845678" />
+        <p style="color:#f5848c">Hello ' ;
+        echo$current_user->user_login ;
+        echo '</p>';
+} 
+else { wp_loginout(); } ?>
+        <?php 
+        } else{ echo '
+        <img src="https://bizweb.dktcdn.net/100/426/076/themes/877813/assets/account_icon.png?1667286845678" />
+
+            <div class="content">
             <p class="title"> Tài khoản</p>
             <p class="phone"> Đăng nhập</p>
-        </div>';
-		}
-		?>
+        </div>' ; } ?>
 
     </a>
 
