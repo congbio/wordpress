@@ -1637,3 +1637,14 @@ function bizberg_shop_setup_theme() {
     add_theme_support( 'title-tag' );
     add_theme_support( 'automatic-feed-links' );
 }
+add_action('wp_logout','go_home');
+function go_home(){
+  wp_redirect( home_url() );
+  exit();
+}
+add_filter('woocommerce_login_redirect', 'wc_login_redirect');
+function wc_login_redirect(  ) {
+      wp_redirect( home_url() );
+       exit();
+    
+}
